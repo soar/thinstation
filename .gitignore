@@ -46,6 +46,7 @@ autodl
 /ts/build/kernel/vmlinuz-3.12.17TS
 /ts/build/kernel/vmlinuz-3.12.17TS_SMP
 /ts/build/kernel/firmware/
+/ts/build/packages/alltimezone/
 /ts/build/packages/acpi/bin/
 /ts/build/packages/aufs/mnt/
 /ts/build/packages/aufs/sbin/
