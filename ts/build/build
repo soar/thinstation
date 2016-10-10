@@ -709,9 +709,15 @@ splash_resize()
 		rm tmp.png
         else
 		$TOOLSDIR/splash/bin/splash_resize ./utils/tools/splash $ts_boottheme 1024x768 1024x768 $res
-		convert -size 1024x768 \
-			$TOOLSDIR/splash/$ts_boottheme/1024x768/silent.jpg \
-			-resize $res\! $TOOLSDIR/splash/$ts_boottheme/$res/silent.jpg
+		if [ -f $TOOLSDIR/splash/$ts_boottheme/1024x768/silent_extra.jpg ]; then
+			convert -size 4896x3264 \
+				$TOOLSDIR/splash/$ts_boottheme/1024x768/silent_extra.jpg \
+				-resize $res\! $TOOLSDIR/splash/$ts_boottheme/$res/silent.jpg
+		else
+			convert -size 1024x768 \
+				$TOOLSDIR/splash/$ts_boottheme/1024x768/silent.jpg \
+				-resize $res\! $TOOLSDIR/splash/$ts_boottheme/$res/silent.jpg
+		fi
         fi
 }
 
