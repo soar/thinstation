@@ -23,7 +23,6 @@ module r8169
 module radeon
 module rfkill
 module scsi_mod
-module sd_mod
 module serio_raw
 module shpchp
 module snd
@@ -34,11 +33,7 @@ module snd-hda-core
 module snd-hda-intel
 module snd-hwdep
 module snd-pcm
-module snd-rawmidi
-module snd-seq-device
 module snd-timer
-module snd-usb-audio
-module snd-usbmidi-lib
 module soundcore
 module sparse-keymap
 module syscopyarea
@@ -47,6 +42,5 @@ module sysimgblt
 module tpm
 module tpm_tis
 module ttm
-module uas
 module video
 module wmi
