@@ -1,0 +1,360 @@
+sstc-902b34df4763
+    description: Desktop Computer
+    product: To be filled by O.E.M. (To be filled by O.E.M.)
+    vendor: Gigabyte Technology Co., Ltd.
+    version: To be filled by O.E.M.
+    serial: To be filled by O.E.M.
+    width: 32 bits
+    capabilities: smbios-2.7 dmi-2.7 smp-1.4 smp
+    configuration: boot=normal chassis=desktop cpus=2 family=To be filled by O.E.M. sku=To be filled by O.E.M. uuid=00020003-0004-0005-0006-000700080009
+  *-core
+       description: Motherboard
+       product: E350N WIN8
+       vendor: Gigabyte Technology Co., Ltd.
+       physical id: 0
+       version: x.x
+       serial: To be filled by O.E.M.
+       slot: To be filled by O.E.M.
+     *-firmware
+          description: BIOS
+          vendor: American Megatrends Inc.
+          physical id: 0
+          version: F3
+          date: 01/18/2013
+          size: 64KiB
+          capacity: 4032KiB
+          capabilities: pci upgrade shadowing cdboot bootselect socketedrom edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int9keyboard int14serial int17printer acpi usb biosbootspecification uefi
+     *-memory
+          description: System Memory
+          physical id: 2a
+          slot: System board or motherboard
+          size: 2GiB
+          capacity: 2GiB
+        *-bank
+             description: DIMM DDR3 Synchronous 1333 MHz (0.8 ns)
+             product: HMT325U6CFR8C-PB
+             vendor: Hynix/Hyundai
+             physical id: 0
+             serial: 06345D74
+             slot: DIMM 1
+             size: 2GiB
+             width: 64 bits
+             clock: 1333MHz (0.8ns)
+     *-cache:0
+          description: L1 cache
+          physical id: 2e
+          slot: L1 CACHE
+          size: 128KiB
+          capacity: 128KiB
+          clock: 1GHz (1.0ns)
+          capabilities: pipeline-burst internal write-back unified
+     *-cache:1
+          description: L2 cache
+          physical id: 2f
+          slot: L2 CACHE
+          size: 1MiB
+          capacity: 1MiB
+          clock: 1GHz (1.0ns)
+          capabilities: pipeline-burst internal write-back unified
+     *-cpu:0
+          description: CPU
+          product: AMD E-350D APU with Radeon(tm) HD Graphics
+          vendor: Advanced Micro Devices [AMD]
+          physical id: 30
+          bus info: cpu@0
+          version: 15.2.0
+          slot: P0
+          size: 1280MHz
+          capacity: 1600MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: x86-64 boot fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall mmxext fxsr_opt pdpe1gb rdtscp constant_tsc rep_good nonstop_tsc extd_apicid aperfmperf eagerfpu pni monitor ssse3 cx16 popcnt lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch ibs skinit wdt hw_pstate vmmcall arat npt lbrv svm_lock nrip_save pausefilter cpufreq
+          configuration: cores=2 enabledcores=2 threads=2
+     *-cpu:1
+          physical id: 1
+          bus info: cpu@1
+          version: 15.2.0
+          size: 800MHz
+          capacity: 1600MHz
+          capabilities: cpufreq
+     *-pci:0
+          description: Host bridge
+          product: Family 14h Processor Root Complex
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 00
+          width: 32 bits
+          clock: 66MHz
+        *-display
+             description: VGA compatible controller
+             product: Wrestler [Radeon HD 6310]
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm pciexpress msi vga_controller bus_master cap_list rom
+             configuration: driver=radeon latency=0
+             resources: irq:26 memory:c0000000-cfffffff ioport:f000(size=256) memory:feb00000-feb3ffff memory:c0000-dffff
+        *-multimedia:0
+             description: Audio device
+             product: Wrestler HDMI Audio
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pm pciexpress msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=0
+             resources: irq:25 memory:feb44000-feb47fff
+        *-storage
+             description: SATA controller
+             product: SB7x0/SB8x0/SB9x0 SATA Controller [IDE mode]
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 11
+             bus info: pci@0000:00:11.0
+             version: 40
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=32
+             resources: irq:19 ioport:f140(size=8) ioport:f130(size=4) ioport:f120(size=8) ioport:f110(size=4) ioport:f100(size=16) memory:feb4f000-feb4f3ff
+        *-usb:0
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB OHCI0 Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 12
+             bus info: pci@0000:00:12.0
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb4e000-feb4efff
+        *-usb:1
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB EHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 12.2
+             bus info: pci@0000:00:12.2
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=32
+             resources: irq:17 memory:feb4d000-feb4d0ff
+        *-usb:2
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB OHCI0 Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 13
+             bus info: pci@0000:00:13.0
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb4c000-feb4cfff
+        *-usb:3
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB EHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 13.2
+             bus info: pci@0000:00:13.2
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=32
+             resources: irq:17 memory:feb4b000-feb4b0ff
+        *-serial
+             description: SMBus
+             product: SBx00 SMBus Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 42
+             width: 32 bits
+             clock: 66MHz
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:0
+        *-multimedia:1
+             description: Audio device
+             product: SBx00 Azalia (Intel HDA)
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 40
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=snd_hda_intel latency=32
+             resources: irq:16 memory:feb40000-feb43fff
+        *-isa
+             description: ISA bridge
+             product: SB7x0/SB8x0/SB9x0 LPC host controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 14.3
+             bus info: pci@0000:00:14.3
+             version: 40
+             width: 32 bits
+             clock: 66MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-pci:0
+             description: PCI bridge
+             product: SBx00 PCI to PCI Bridge
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 14.4
+             bus info: pci@0000:00:14.4
+             version: 40
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pci subtractive_decode bus_master vga_palette
+        *-usb:4
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB OHCI2 Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 14.5
+             bus info: pci@0000:00:14.5
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb4a000-feb4afff
+        *-pci:1
+             description: PCI bridge
+             product: SB700/SB800/SB900 PCI to PCI bridge (PCIE port 0)
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm pciexpress msi ht normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:e000(size=4096) ioport:d0000000(size=1048576)
+           *-network
+                description: Ethernet interface
+                product: RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller
+                vendor: Realtek Semiconductor Co., Ltd.
+                physical id: 0
+                bus info: pci@0000:02:00.0
+                logical name: eth0
+                version: 06
+                serial: 90:2b:34:df:47:63
+                size: 100Mbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress msix vpd bus_master cap_list ethernet physical tp mii 10bt 10bt-fd 100bt 100bt-fd 1000bt 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=r8169 driverversion=2.3LK-NAPI duplex=full firmware=rtl8168e-3_0.0.4 03/27/12 ip=10.10.7.33 latency=0 link=yes multicast=yes port=MII speed=100Mbit/s
+                resources: irq:24 ioport:e000(size=256) memory:d0004000-d0004fff memory:d0000000-d0003fff
+        *-usb:5
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB OHCI0 Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: ohci bus_master
+             configuration: driver=ohci-pci latency=32
+             resources: irq:18 memory:feb49000-feb49fff
+        *-usb:6
+             description: USB controller
+             product: SB7x0/SB8x0/SB9x0 USB EHCI Controller
+             vendor: Advanced Micro Devices, Inc. [AMD/ATI]
+             physical id: 16.2
+             bus info: pci@0000:00:16.2
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: pm debug ehci bus_master cap_list
+             configuration: driver=ehci-pci latency=32
+             resources: irq:17 memory:feb48000-feb480ff
+     *-pci:1
+          description: Host bridge
+          product: Family 12h/14h Processor Function 0
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 101
+          bus info: pci@0000:00:18.0
+          version: 43
+          width: 32 bits
+          clock: 33MHz
+     *-pci:2
+          description: Host bridge
+          product: Family 12h/14h Processor Function 1
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 102
+          bus info: pci@0000:00:18.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:3
+          description: Host bridge
+          product: Family 12h/14h Processor Function 2
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 103
+          bus info: pci@0000:00:18.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:4
+          description: Host bridge
+          product: Family 12h/14h Processor Function 3
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 104
+          bus info: pci@0000:00:18.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=k10temp
+          resources: irq:0
+     *-pci:5
+          description: Host bridge
+          product: Family 12h/14h Processor Function 4
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 105
+          bus info: pci@0000:00:18.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:6
+          description: Host bridge
+          product: Family 12h/14h Processor Function 6
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 106
+          bus info: pci@0000:00:18.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:7
+          description: Host bridge
+          product: Family 12h/14h Processor Function 5
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 107
+          bus info: pci@0000:00:18.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-pci:8
+          description: Host bridge
+          product: Family 12h/14h Processor Function 7
+          vendor: Advanced Micro Devices, Inc. [AMD]
+          physical id: 108
+          bus info: pci@0000:00:18.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+  *-scsi
+       physical id: 1
+       bus info: scsi@4
+       logical name: scsi4
+       capabilities: scsi-host
+       configuration: driver=usb-storage
