@@ -1,3 +1,7 @@
+# CDROM (also USB-CDROM)
+module cdrom
+module sr_mod
+
 # Looks like this modules are needed for USB flash drives
 module scsi_mod
 module sd_mod
