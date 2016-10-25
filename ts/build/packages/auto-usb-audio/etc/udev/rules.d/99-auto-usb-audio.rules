@@ -1,0 +1,5 @@
+# This action triggers two-three times for each interface on device
+#ACTION=="add", SUBSYSTEM=="usb", DRIVERS=="snd-usb-audio", RUN+="/etc/udev/scripts/auto-usb-audio-wrap.sh"
+
+# This action triggers for any USB device (but only root)
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", RUN+="/etc/udev/scripts/auto-usb-audio-wrap.sh"
