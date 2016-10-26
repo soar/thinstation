@@ -204,6 +204,20 @@ modes_ ()
     return 0
 }
 
+disablelvds_ ()
+{
+	CONF=/etc/X11/xorg.conf.d/99-disablelvds.conf
+	echo -e "Section \"Device\""				> $CONF
+	echo -e "\tIdentifier \"onboard\""			>> $CONF
+	echo -e "\tOption \"Monitor-LVDS1\" \"lvds\""		>> $CONF
+	echo -e "EndSection"					>> $CONF
+
+	echo -e "Section \"Monitor\""				>> $CONF
+	echo -e "\tIdentifier \"lvds\""				>> $CONF
+	echo -e "\tOption \"ignore\" \"true\""			>> $CONF
+	echo -e "EndSection"					>> $CONF
+}
+
 case $1 in
 init|start)
 	X_SERVER=Xorg
@@ -213,7 +227,7 @@ init|start)
         fi
 	
 	echo "X_SERVER=$X_SERVER" >> $TS_RUNTIME
-	for section in ServerLayout Files Keyboard Mouse Monitor Device Modes ServerFlags Screen Dri; do
+	for section in ServerLayout Files Keyboard Mouse Monitor Device Modes ServerFlags Screen Dri DisableLVDS; do
 		get_options $section
 		`make_lower $section`_
 		if [ -e /tmp/x_$section ]; then rm /tmp/x_$section; fi
