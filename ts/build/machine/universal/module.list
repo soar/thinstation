@@ -1,0 +1,18 @@
+# CDROM (also USB-CDROM)
+module cdrom
+module sr_mod
+
+# Looks like this modules are needed for USB flash drives
+module scsi_mod
+module sd_mod
+module uas
+
+# Sound-related modules (also USB-audio)
+module snd-rawmidi
+module snd-seq-device
+module snd-usb-audio
+module snd-usbmidi-lib
+
+# Logitech module (for example for Logitech N305)
+module hid-logitech-dj
+

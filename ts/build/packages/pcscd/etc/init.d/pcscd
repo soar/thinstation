@@ -16,8 +16,17 @@ init)
       elif [ "`make_caps $PCSCD_CARDREADER_TYPE`" = "USB" ]; then
 	echo "# USB is enabled!" >/etc/reader.conf
       fi
-      /sbin/pcscd
+      {
+        setsid "${0}" wrapper >& /dev/null
+      } &
     fi
+    ;;
+wrapper)
+    # Wrapper for restarting pcscd if crashed
+    while true; do
+      /sbin/pcscd -f 2>&1 | logger -t "pcscd"
+      sleep 10s
+    done
     ;;
 help)
     echo "Usage: $0 init"

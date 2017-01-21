@@ -1,0 +1,5 @@
+firmware PALM_me.bin
+firmware PALM_pfp.bin
+firmware rtl8168f-1.fw
+firmware SUMO_rlc.bin
+firmware SUMO_uvd.bin

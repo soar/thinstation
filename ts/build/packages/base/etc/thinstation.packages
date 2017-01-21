@@ -121,7 +121,7 @@ run_command()
 	if is_enabled $LOG_COMMANDS && [ -z $PASSWORD ]; then
 		echo "$CMD" >> $APPLOG
 	fi
-	eval $CMD >> $APPLOG 2>&1
+	eval $CMD 2>&1 | logger -t "CExec"
 	STATUS=$?
 	unset PASSWORD ORDERED_CMD CMD
 	if x_wm ;then

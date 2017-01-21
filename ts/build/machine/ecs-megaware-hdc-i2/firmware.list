@@ -1,0 +1,4 @@
+firmware PALM_me.bin
+firmware PALM_pfp.bin
+firmware SUMO_rlc.bin
+firmware SUMO_uvd.bin
